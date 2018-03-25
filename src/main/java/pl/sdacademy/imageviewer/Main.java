@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 public class Main extends Application{
@@ -13,6 +14,10 @@ public class Main extends Application{
         primaryStage.setTitle("Przeglądarka obrazów");
         primaryStage.setScene(new Scene(root, 1024, 1024));
         primaryStage.show();
+
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Open file");
+        fileChooser.showOpenDialog(primaryStage);
     }
 
     public static void main(String[] args) {
