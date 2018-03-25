@@ -24,7 +24,6 @@ public class Controller {
     @FXML
     private Button buttonOpen;
 
-
     private Stage stage;
 
     private ImageFileOpener imageFileOpener;
@@ -36,6 +35,7 @@ public class Controller {
             public void handle(ActionEvent event) {
 
              imageFileOpener.openFile();
+
             }
         });
 
