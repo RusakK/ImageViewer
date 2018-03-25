@@ -50,4 +50,8 @@ public class Controller {
 
     }
 
+    private void displayImage(){
+
+    }
+
 }

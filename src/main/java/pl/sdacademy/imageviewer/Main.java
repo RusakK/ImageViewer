@@ -12,7 +12,7 @@ public class Main extends Application{
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("view.fxml"));
         primaryStage.setTitle("Przeglądarka obrazów");
-        primaryStage.setScene(new Scene(root, 1024, 1024));
+        primaryStage.setScene(new Scene(root, 850, 700));
         primaryStage.show();
 
         FileChooser fileChooser = new FileChooser();

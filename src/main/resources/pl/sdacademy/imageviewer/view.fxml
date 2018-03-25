@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.sdacademy.imageviewer.Controller">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.sdacademy.imageviewer.Controller">
    <children>
-      <ImageView fx:id="imageViewer" fitHeight="850.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imageViewer" fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
          <VBox.margin>
             <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
          </VBox.margin>
@@ -18,7 +18,7 @@
          <children>
             <Button fx:id="buttonOpen" mnemonicParsing="false" text="Wybierz plik">
                <HBox.margin>
-                  <Insets bottom="15.0" left="25.0" right="15.0" top="15.0" />
+                  <Insets bottom="10.0" left="25.0" right="10.0" />
                </HBox.margin>
                <padding>
                   <Insets bottom="15.0" left="25.0" right="25.0" top="10.0" />
@@ -26,7 +26,7 @@
             </Button>
             <Button fx:id="buttonLeft" mnemonicParsing="false" text="&lt;">
                <HBox.margin>
-                  <Insets bottom="15.0" left="330.0" right="15.0" top="15.0" />
+                  <Insets bottom="15.0" left="240.0" right="15.0" />
                </HBox.margin>
                <padding>
                   <Insets bottom="15.0" left="17.0" right="17.0" top="15.0" />
@@ -34,7 +34,7 @@
             </Button>
             <Button fx:id="buttonRight" mnemonicParsing="false" text="&gt;">
                <HBox.margin>
-                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
                </HBox.margin>
                <padding>
                   <Insets bottom="15.0" left="17.0" right="17.0" top="15.0" />
