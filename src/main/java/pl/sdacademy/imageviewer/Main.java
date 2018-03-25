@@ -15,9 +15,7 @@ public class Main extends Application{
         primaryStage.setScene(new Scene(root, 850, 700));
         primaryStage.show();
 
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Open file");
-        fileChooser.showOpenDialog(primaryStage);
+
     }
 
     public static void main(String[] args) {

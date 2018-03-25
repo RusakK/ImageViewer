@@ -33,17 +33,18 @@ public class Controller {
         buttonOpen.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent event) {
 
-                /*final DirectoryChooser directoryChooser =
+                final DirectoryChooser directoryChooser =
                         new DirectoryChooser();
 
                 final File selectedDirectory =
                         directoryChooser.showDialog(stage);
                 if (selectedDirectory != null) {
-                    selectedDirectory.getAbsolutePath();*/
+                    selectedDirectory.getAbsolutePath();
 
-                FileChooser fileChooser = new FileChooser();
+               /* FileChooser fileChooser = new FileChooser();
                 fileChooser.setTitle("Open file");
-                fileChooser.showOpenDialog(stage);
+                fileChooser.showOpenDialog(stage);*/
+                }
             }
         });
 
