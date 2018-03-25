@@ -12,7 +12,7 @@ public class Controller {
     private Button buttonLeft;
     @FXML
     private Button buttonRight;
-    
+
 
 
 }
