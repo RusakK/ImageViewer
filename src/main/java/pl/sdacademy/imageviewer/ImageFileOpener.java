@@ -12,6 +12,7 @@ public class ImageFileOpener {
 
     public void openFile() {
         BufferedImage img = null;
+
         try {
             img = ImageIO.read(new File("path"));
         } catch (IOException e) {
