@@ -23,15 +23,20 @@ public class ImageFileOpener {
 
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Open file");
-        fileChooser.showOpenDialog(stage);
         fileChooser.setInitialDirectory(
                 new File(System.getProperty("user.home"))
         );
         fileChooser.getExtensionFilters().addAll(
-                new FileChooser.ExtensionFilter("JPG", "*.jpg"),
-                new FileChooser.ExtensionFilter("PNG", "*.png")
+                new FileChooser.ExtensionFilter("Pliki graficzne", "*.jpg", "*.png", "*jpeg")
         );
+        File file = fileChooser.showOpenDialog(stage);
+        if(file != null) {
+            diplay(file);
+        }
 
+    }
+
+    private void diplay(File file) {
 
     }
 }
