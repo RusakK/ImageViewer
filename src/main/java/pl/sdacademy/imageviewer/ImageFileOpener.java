@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.List;
 
 public class ImageFileOpener {
-    private List<ImageFile> imageFiles;
+    private List<BufferedImage> imageFiles;
     private int currentFileIndex;
 
     public void openFile() {
@@ -18,5 +18,7 @@ public class ImageFileOpener {
         } catch (IOException e) {
             System.out.println("Can't open.");
         }
+        currentFileIndex = 0;
+        imageFiles.add(img);
     }
 }
