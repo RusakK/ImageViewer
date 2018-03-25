@@ -27,24 +27,15 @@ public class Controller {
 
     private Stage stage;
 
-    public void initialize(){
+    private ImageFileOpener imageFileOpener;
 
+    public void initialize(){
+        imageFileOpener = new ImageFileOpener(stage);
 
         buttonOpen.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent event) {
 
-                final DirectoryChooser directoryChooser =
-                        new DirectoryChooser();
-
-                final File selectedDirectory =
-                        directoryChooser.showDialog(stage);
-                if (selectedDirectory != null) {
-                    selectedDirectory.getAbsolutePath();
-
-               /* FileChooser fileChooser = new FileChooser();
-                fileChooser.setTitle("Open file");
-                fileChooser.showOpenDialog(stage);*/
-                }
+             imageFileOpener.openFile();
             }
         });
 

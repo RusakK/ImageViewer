@@ -1,5 +1,8 @@
 package pl.sdacademy.imageviewer;
 
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -7,18 +10,29 @@ import java.io.IOException;
 import java.util.List;
 
 public class ImageFileOpener {
+
+
+    private Stage stage;
     private List<BufferedImage> imageFiles;
     private int currentFileIndex;
 
-    public void openFile() {
-        BufferedImage img = null;
+    public ImageFileOpener(Stage stage) {
+        this.stage = stage;
+    }
 
-        try {
-            img = ImageIO.read(new File("path"));
-        } catch (IOException e) {
-            System.out.println("Can't open.");
-        }
-        currentFileIndex = 0;
-        imageFiles.add(img);
+    public void openFile() {
+
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Open file");
+        fileChooser.showOpenDialog(stage);
+        fileChooser.setInitialDirectory(
+                new File(System.getProperty("user.home"))
+        );
+        fileChooser.getExtensionFilters().addAll(
+                new FileChooser.ExtensionFilter("All Images", "*.*"),
+                new FileChooser.ExtensionFilter("JPG", "*.jpg"),
+                new FileChooser.ExtensionFilter("PNG", "*.png")
+        );
+    
     }
 }
