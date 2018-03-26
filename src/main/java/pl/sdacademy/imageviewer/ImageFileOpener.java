@@ -12,7 +12,7 @@ public class ImageFileOpener {
 
 
     private Stage stage;
-    private List<ImageFile> imageFiles;
+    private List<File> imageFiles;
     private int currentFileIndex;
 
     public ImageFileOpener(Stage stage) {
@@ -21,18 +21,21 @@ public class ImageFileOpener {
 
     public void openFile() {
 
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Open file");
-        fileChooser.setInitialDirectory(
-                new File(System.getProperty("user.home"))
-        );
-        fileChooser.getExtensionFilters().addAll(
-                new FileChooser.ExtensionFilter("Pliki graficzne", "*.jpg", "*.png", "*jpeg")
-        );
-        File file = fileChooser.showOpenDialog(stage);
-        if(file != null) {
-            diplay(file);
-        }
+//        FileChooser fileChooser = new FileChooser();
+//        fileChooser.setTitle("Open file");
+//        fileChooser.getExtensionFilters().addAll(
+//                new FileChooser.ExtensionFilter("Pliki graficzne", "*.jpg", "*.png", "*jpeg")
+//        );
+//
+//        File selectedFile = fileChooser.showOpenDialog(null );
+//        if(selectedFile != null){
+//            imageFiles.add(new File(selectedFile.getName()));
+//        } else {
+//            System.out.println("Błędny plik");
+//        }
+
+//        fileChooser.showOpenDialog(stage);
+
 
     }
 
